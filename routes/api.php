@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PoliController;
+use App\Http\Controllers\PasienController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\PegawaiController;
 
@@ -39,3 +40,9 @@ Route::get('pegawai/{id}', [PegawaiController::class, 'show']);
 Route::post('pegawai', [PegawaiController::class, 'store']);
 Route::put('pegawai/{id}', [PegawaiController::class, 'update']);
 Route::delete('pegawai/{id}', [PegawaiController::class, 'destroy']);
+// Pasien
+Route::get('/pasien', [PasienController::class, 'index']);
+Route::get('pasien/{id}', [PasienController::class, 'show']);
+Route::post('pasien', [PasienController::class, 'store']);
+Route::put('pasien/{id}', [PasienController::class, 'update']);
+Route::delete('pasien/{id}', [PasienController::class, 'destroy']);
