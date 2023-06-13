@@ -10,5 +10,12 @@ class Pegawai extends Model
     use HasFactory;
     protected $table = 'pegawais';
 
-    protected $fillable = ['nip', 'nama', 'tgl_lahir', 'no_telp', 'email', 'password'];
+    protected $fillable = [
+        'nip',
+        'nama',
+        'tanggal_lahir', 
+        'nomor_telepon', 
+        'email',
+        'password'
+    ];
 }

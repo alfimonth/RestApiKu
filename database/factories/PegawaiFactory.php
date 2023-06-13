@@ -21,8 +21,8 @@ class PegawaiFactory extends Factory
         return [
             'nip' => $faker->numerify('#############'),
             'nama' => $faker->name,
-            'tgl_lahir' => $faker->date('Y-m-d', '2002-01-20'),
-            'no_telp' => $faker->phoneNumber,
+            'tanggal_lahir' => $faker->date('Y-m-d', '2002-01-20'),
+            'nomor_telepon' => $faker->phoneNumber,
             'email' => $faker->safeEmail,
             'password' => bcrypt('123'),
             'created_at' => now(),

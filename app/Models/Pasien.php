@@ -10,5 +10,5 @@ class Pasien extends Model
     use HasFactory;
     protected $table = 'pasiens';
 
-    protected $fillable = ['no_rm', 'nama', 'tgl_lahir', 'no_telp', 'alamat'];
+    protected $fillable = ['nomor_rm', 'nama', 'tanggal_lahir', 'nomor_telepon', 'alamat'];
 }

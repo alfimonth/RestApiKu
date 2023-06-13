@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('nip');
             $table->string('nama');
-            $table->dateTime('tgl_lahir');
-            $table->string('no_telp');
+            $table->dateTime('tanggal_lahir');
+            $table->string('nomor_telepon');
             $table->string('email');
             $table->string('password');
 

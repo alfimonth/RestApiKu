@@ -20,9 +20,9 @@ class PasienFactory extends Factory
 
         return [
             'nama' => $faker->name,
-            'no_rm' => $faker->numerify('#########'),
-            'tgl_lahir' => $faker->date('Y-m-d', '2002-01-20'),
-            'no_telp' => $faker->phoneNumber,
+            'nomor_rm' => $faker->numerify('#########'),
+            'tanggal_lahir' => $faker->date('Y-m-d', '2002-01-20'),
+            'nomor_telepon' => $faker->phoneNumber,
             'alamat' => $faker->address,
             'created_at' => now(),
             'updated_at' => now(),

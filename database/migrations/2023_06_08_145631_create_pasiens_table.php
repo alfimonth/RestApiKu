@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('pasiens', function (Blueprint $table) {
             $table->id();
-            $table->string('no_rm');
+            $table->string('nomor_rm');
             $table->string('nama');
-            $table->dateTime('tgl_lahir');
-            $table->string('no_telp');
+            $table->dateTime('tanggal_lahir');
+            $table->string('nomor_telepon');
             $table->string('alamat');
             $table->timestamps();
         });
